@@ -1,5 +1,5 @@
 protein = []
-inputARN = (prompt("Salut, donne moi un ARN")) ;
+inputARN = prompt("Salut, donne moi un ARN") ;
 arrayARN = inputARN.match(/.{1,3}/g);
 arrayARN.forEach(ARN =>{
 	switch(ARN){
@@ -15,15 +15,15 @@ arrayARN.forEach(ARN =>{
 		case "CCC":
 		case "CCA":
 		case "CCG":
-			protein.push("Proline")
+			protein.push("Proline");
 			break;
 		case "UUA":
 		case "UUG":
-			protein.push("Leucine")
+			protein.push("Leucine");
 			break;
 		case "UUU":
 		case "UUC":
-			protein.push("Phénylalanine")
+			protein.push("Phénylalanine");
 			break;
 		case "CGU":
 		case "CGC":
@@ -31,11 +31,11 @@ arrayARN.forEach(ARN =>{
 		case "CGG":
 		case "AGA":
 		case "AGG":
-			protein.push("Arginine")
+			protein.push("Arginine");
 			break;
 		case "UAU":
 		case "UAC":
-			protein.push("Tyrosine")
+			protein.push("Tyrosine");
 			break;
 	}
 });
